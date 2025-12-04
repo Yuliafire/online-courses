@@ -1,0 +1,46 @@
+@use "../variables" as *;
+
+.catalog {
+  &__search {
+    position: relative;
+    display: flex;
+    flex: 1; 
+    align-items: center;
+    max-width: clamp(280px, 35vw, 420px);
+    min-width: 240px;
+    max-width: 315px;
+    height: 44px;
+    box-sizing: border-box;
+    background: $primary-bg;
+    border: $input-border;
+    border-radius: $input-radius;
+  }
+
+  &__search-input {
+    width: 100%;
+    padding: 0px 15px;
+    border: none;
+    font-size: 16px;
+    font-family: inherit;
+    transition: $transition;
+
+    &::placeholder {
+      color: $text-input;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__search-icon {
+    position: absolute;
+    right: clamp(12px, 2vw, 16px);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 15px;
+    height: 15px;
+    opacity: 0.7;
+  }
+}

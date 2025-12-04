@@ -1,0 +1,108 @@
+@use "../variables" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 438px;
+  height: 438px;
+  background: $primary-bg;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  transition: $transition;
+  border: $card-border;
+  box-shadow: $card-box-shadow;
+  border-radius: $input-radius;
+
+  &:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: $input-radius $input-radius 0 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: $primary-bg;
+    padding: 25px;
+    gap: 18px;
+  }
+
+  &__tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    letter-spacing: 0.5px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    border-radius: $input-radius;
+    padding: 1px 8px;
+    color: $primary-bg;
+
+    &--marketing {
+      background: $tag-marketing;
+    }
+
+    &--management {
+      background: $tag-management;
+    }
+
+    &--hr {
+      background: $tag-hr;
+    }
+
+    &--design {
+      background: $tag-design;
+    }
+
+    &--development {
+      background: $tag-development;
+    }
+  }
+
+  &__title {
+    font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: 600;
+    margin: 0 0 8px;
+    line-height: 1.3;
+    color: $text-primary;
+  }
+
+  &__price {
+    font-size: 28px;
+    font-weight: 700;
+    color: $red-text;
+    margin: 8px 0;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  &__instructor {
+    margin-top: auto;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: $text-secondary;
+  }
+
+
+
+
+
+}

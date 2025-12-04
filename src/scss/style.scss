@@ -1,0 +1,30 @@
+@use "variables" as *;
+@use "blocks/header" as *;
+@use "blocks/nav" as *;
+@use "blocks/search" as *;
+@use "blocks/grid" as *;
+@use "blocks/card" as *;
+@use "blocks/load-more" as *;
+
+
+*, *::before, *::after {
+     box-sizing: border-box; 
+     margin: 0;
+     padding: 0;
+    }
+
+body { 
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #fff; 
+    color: #1A1A1A; 
+    line-height: 1.5; 
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 5vw, 40px);
+   }
+
