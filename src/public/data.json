@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "category": "hr",
+      "category": "HR & Recruting",
       "title": "HR Management and Analytics",
       "price": 200,
       "instructor": "Leslie Alexander Li",
@@ -58,7 +58,7 @@
     },
     {
       "id": 8,
-      "category": "hr",
+      "category": "HR & Recruting",
       "title": "Human Resources – Selection and Recruitment",
       "price": 150,
       "instructor": "Kathryn Murphy",
@@ -99,7 +99,7 @@
     },
     {
       "id": 13,
-      "category": "hr",
+      "category": "HR & Recruting",
       "title": "Talent Acquisition Masterclass",
       "price": 280,
       "instructor": "James Liu",
@@ -107,7 +107,7 @@
     },
     {
       "id": 14,
-      "category": "hr",
+      "category": "HR & Recruting",
       "title": "Diversity & Inclusion in the Workplace",
       "price": 190,
       "instructor": "Robert Chen",
