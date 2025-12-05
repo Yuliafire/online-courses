@@ -25,7 +25,7 @@
     }
   }
 
-  &__nav {
+  &__categories {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -35,7 +35,7 @@
     gap: 20px;
   }
 
-  &__nav-list {
+  &__tabs {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -50,7 +50,7 @@
     }
   }
 
-  &__nav-link {
+  &__tabs-tab {
     padding: 10px 27px;
     background: transparent;
     border: 2px solid transparent;

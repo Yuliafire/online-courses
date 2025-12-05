@@ -24,55 +24,16 @@
       <section class="catalog">
         <div class="catalog__container">
           <div class="catalog__topbar">
-            <nav class="catalog__nav" id="categoryNav" role="tablist">
-              <ul class="catalog__nav-list" role="tablist">
-                <li>
-                  <a
-                    href="#"
-                    class="catalog__nav-link catalog__nav-link--active"
-                    data-category="all"
-                    >All <sup class="catalog__nav-count">17</sup></a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="catalog__nav-link"
-                    data-category="marketing"
-                    >Marketing <sup class="catalog__nav-count">4</sup></a
-                  >
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    class="catalog__nav-link"
-                    data-category="management"
-                    >Management <sup class="catalog__nav-count">4</sup></a
-                  >
-                </li>
-
-                <li>
-                  <a href="#" class="catalog__nav-link" data-category="hr"
-                    >HR &amp; Recruiting
-                    <sup class="catalog__nav-count">3</sup></a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="catalog__nav-link" data-category="design"
-                    >Design <sup class="catalog__nav-count">3</sup></a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="catalog__nav-link"
-                    data-category="development"
-                    >Development <sup class="catalog__nav-count">3</sup></a
-                  >
-                </li>
-              </ul>
-            </nav>
+            <div class="catalog__categories">
+              <div class="catalog__tabs">
+                  <button class="catalog__tabs-tab gifts__tabs-tab--active" data-category="all">All <sup class="catalog__nav-count">17</sup></button>
+                  <button class="catalog__tabs-tab" data-category="marketing">Marketing <sup class="catalog__nav-count">4</sup></button>
+                  <button class="catalog__tabs-tab" data-category="management">Management <sup class="catalog__nav-count">4</sup></button>
+                  <button class="catalog__tabs-tab" data-category="hr">HR &amp; Recruiting<sup class="catalog__nav-count">3</sup></button>
+                  <button class="catalog__tabs-tab" data-category="design">Design <sup class="catalog__nav-count">3</sup></button>
+                  <button class="catalog__tabs-tab" data-category="development">Development <sup class="catalog__nav-count">3</sup></button>
+              </div>
+          </div>
 
             <div class="catalog__search">
               <input
@@ -100,7 +61,7 @@
             </div>
           </div>
           <div class="catalog__grid" id="grid" role="region" aria-live="polite">
-            <article class="card">
+            <article class="card" data-category="marketing">
               <div class="card__image-wrapper">
                 <img
                   src="/images/image.jpg"
@@ -117,7 +78,7 @@
               </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-category="management">
               <div class="card__image-wrapper">
                 <img
                   src="/images/image2.jpg"
@@ -133,7 +94,7 @@
               </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-category="hr">
               <div class="card__image-wrapper">
                 <img
                   src="/images/image3.jpg"
@@ -150,7 +111,7 @@
             </article>
 
 
-            <article class="card">
+            <article class="card" data-category="marketing">
               <div class="card__image-wrapper">
                 <img
                 src="/images/image4.jpg"
@@ -168,7 +129,7 @@
               </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-category="design">
               <div class="card__image-wrapper">
                 <img
                   src="/images/image5.jpg"
@@ -184,7 +145,7 @@
               </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-category="management">
               <div class="card__image-wrapper">
                 <img
                   src="/images/image7.jpg"
@@ -200,7 +161,7 @@
               </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-category="development">
               <div class="card__image-wrapper">
                 <img
                   src="/images/image7.jpg"
@@ -218,7 +179,7 @@
               </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-category="hr">
               <div class="card__image-wrapper">
                 <img
                   src="/images/image8.jpg"
@@ -236,7 +197,7 @@
               </div>
             </article>
 
-            <article class="card">
+            <article class="card" data-category="design">
               <div class="card__image-wrapper">
                 <img
                   src="/images/image9.jpg"
