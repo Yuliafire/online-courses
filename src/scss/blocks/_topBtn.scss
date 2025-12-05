@@ -1,0 +1,35 @@
+.scroll-to-top {
+    display: none;
+    /* Изначально скрыта */
+    position: fixed;
+    bottom: 20px;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    width: 56px;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #FF4646;
+    border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+    .scroll-to-top {
+        display: block;
+        /* Отображается только при ширине экрана 768px и меньше */
+    }
+}
+
+@media (max-width: 768px) {
+    .scroll-to-top {
+        display: block;
+        /* Отображается только при ширине экрана 768px и меньше */
+    }
+}
