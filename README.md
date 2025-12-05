@@ -1,6 +1,14 @@
 # Online Courses Catalog – Test Task  
 **Pixel-perfect • Fully fluid adaptive • Vanilla JS + SCSS + BEM • Zero frameworks**
 
+## Areas for IMPROVEMENT:
+- find new images fo the rest 8 cards ( we have 17 courses in total based on the current figma desing)
+- add typography
+- add mixins 
+- store in local storage filtered results 
+- implement button TOP on smaller screens
+
+
 ## Features
 
 - Pixel-perfect match with the Figma design (1920 px → 320 px)  
@@ -24,3 +32,5 @@ npm install
 # 3. Run dev server 
 npm run dev
 # Open http://localhost:5173
+
+
