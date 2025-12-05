@@ -1,6 +1,7 @@
 @use "../variables" as *;
 
-.scroll-to-top {
+.catalog {
+  &__scroll-top {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -14,10 +15,11 @@
     height: 56px;
     background: $primary-bg;
     border: 1px solid $red-text;
-}
+  }
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .scroll-to-top {
-        display: block;
+      display: block;
     }
+  }
 }
