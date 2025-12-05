@@ -71,18 +71,6 @@
     align-items: center;
     justify-content: center;
 
-    &--active,
-    &:hover {
-      border: $border-active-tab;
-      border-radius: 4px;
-      color: $red-text;
-      transition: $transition;
-
-      sup {
-        color: $red-text;
-      }
-    }
-
     sup {
       position: absolute;
       top: 5px;
@@ -95,6 +83,27 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: color 0.3s ease; 
+    }
+  
+    &--active {
+      border: $border-active-tab;
+      border-radius: 4px;
+      color: $red-text;
+  
+      sup {
+        color: $red-text;          
+        font-weight: 700;
+      }
+    }
+  
+    &:hover:not(&--active) {
+      border: $border-active-tab;
+      color: $red-text;
+  
+      sup {
+        color: $red-text;
+      }
     }
   }
 }

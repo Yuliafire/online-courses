@@ -1,6 +1,5 @@
 import '../scss/style.scss';
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.catalog__tabs-tab');
     const cards = document.querySelectorAll('.card');
@@ -27,5 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     filterCards('all');
-});
 
+    const allTab = document.querySelector('[data-category="all"]');
+    if (allTab) {
+        allTab.classList.add('catalog__tabs-tab--active');
+    }
+});
