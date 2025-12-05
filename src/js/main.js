@@ -62,15 +62,20 @@ document.addEventListener('DOMContentLoaded', () => {
         title.className = 'card__title';
         title.textContent = course.title;
 
+        const footer = document.createElement('div');
+        footer.className = 'card__footer';
+
         const price = document.createElement('p');
         price.className = 'card__price';
         price.textContent = `$${course.price}`;
 
         const instructor = document.createElement('p');
         instructor.className = 'card__instructor';
-        instructor.textContent = `by ${course.instructor}`;
+        instructor.textContent = `| by ${course.instructor}`;
 
-        content.append(tag, title, price, instructor);
+        footer.append(price, instructor);
+
+        content.append(tag, title, footer);
         card.append(imgWrapper, content);
         return card;
     };
@@ -90,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 c.category.toLowerCase().includes(currentSearch)
             );
         }
-
         return filtered;
     };
 
