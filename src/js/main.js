@@ -8,6 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const PER_PAGE = 9;
 
+    const categorySlugMap = {
+        'all': 'all',
+        'marketing': 'marketing',
+        'management': 'management',
+        'hr-recruiting': 'HR & Recruiting',
+        'design': 'design',
+        'development': 'development'
+    };
+
     let allCourses = [];
     let displayedCount = 0;
     let currentCategory = 'all';
@@ -17,10 +26,19 @@ document.addEventListener('DOMContentLoaded', () => {
         while (grid.firstChild) grid.removeChild(grid.firstChild);
     };
 
+    // Функция для преобразования категории в CSS-класс
+    const categoryToSlug = (category) => {
+        return category
+            .toLowerCase()
+            .replace(/&/g, 'and')
+            .replace(/\s+/g, '-')
+            .replace(/[^a-z0-9-]/g, '');
+    };
+
     const createCard = (course) => {
         const card = document.createElement('article');
         card.className = 'card';
-        card.dataset.category = course.category;
+        card.dataset.category = categoryToSlug(course.category);
 
         const imgWrapper = document.createElement('div');
         imgWrapper.className = 'card__image-wrapper';
@@ -36,8 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
         content.className = 'card__content';
 
         const tag = document.createElement('span');
-        tag.className = `card__tag card__tag--${course.category}`;
-        tag.textContent = course.category.charAt(0).toUpperCase() + course.category.slice(1);
+        const slug = categoryToSlug(course.category);
+        tag.className = `card__tag card__tag--${slug}`;
+        tag.textContent = course.category.replace(/\b\w/g, char => char.toUpperCase());
 
         const title = document.createElement('h3');
         title.className = 'card__title';
@@ -58,15 +77,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getVisibleCourses = () => {
         let filtered = allCourses;
+
         if (currentCategory !== 'all') {
-            filtered = filtered.filter(c => c.category === currentCategory);
+            const fullCategory = categorySlugMap[currentCategory];
+            filtered = filtered.filter(c => c.category === fullCategory);
         }
+
         if (currentSearch) {
             filtered = filtered.filter(c =>
                 c.title.toLowerCase().includes(currentSearch) ||
-                c.instructor.toLowerCase().includes(currentSearch)
+                c.instructor.toLowerCase().includes(currentSearch) ||
+                c.category.toLowerCase().includes(currentSearch)
             );
         }
+
         return filtered;
     };
 
@@ -78,21 +102,22 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const updateTabCounts = () => {
-        const visible = getVisibleCourses();
         const isSearching = currentSearch !== '';
 
         tabs.forEach(tab => {
-            const category = tab.dataset.category;
+            const categorySlug = tab.dataset.category;
             const sup = tab.querySelector('.catalog__tabs-count');
             if (!sup) return;
 
-            if (category === currentCategory && isSearching) {
-                sup.textContent = visible.length;                    
-            } else if (category === 'all') {
-                sup.textContent = allCourses.length;                
+            if (categorySlug === currentCategory && isSearching) {
+                const visible = getVisibleCourses();
+                sup.textContent = visible.length;
+            } else if (categorySlug === 'all') {
+                sup.textContent = allCourses.length;
             } else {
-                const total = allCourses.filter(c => c.category === category).length;
-                sup.textContent = total;                           
+                const fullCategory = categorySlugMap[categorySlug];
+                const total = allCourses.filter(c => c.category === fullCategory).length;
+                sup.textContent = total;
             }
         });
     };
@@ -104,18 +129,24 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const debounce = (func, delay) => {
-        let t;
+        let timeout;
         return () => {
-            clearTimeout(t);
-            t = setTimeout(func, delay);
+            clearTimeout(timeout);
+            timeout = setTimeout(func, delay);
         };
     };
 
     fetch('/data.json')
-        .then(r => r.json())
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+            return response.json();
+        })
         .then(data => {
             allCourses = data.courses;
             applyFilters();
+        })
+        .catch(error => {
+            console.error('Error loading courses:', error);
         });
 
     tabs.forEach(tab => {
@@ -124,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tabs.forEach(t => t.classList.remove('catalog__tabs-tab--active'));
             tab.classList.add('catalog__tabs-tab--active');
             currentCategory = tab.dataset.category;
-            currentSearch = '';            
+            currentSearch = '';
             searchInput.value = '';
             displayedCount = 0;
             applyFilters();
@@ -142,12 +173,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const next = visible.slice(displayedCount, displayedCount + PER_PAGE);
         next.forEach(c => grid.appendChild(createCard(c)));
         displayedCount += next.length;
-        if (displayedCount >= visible.length) loadMoreBtn.style.display = 'none';
+
+        if (displayedCount >= visible.length) {
+            loadMoreBtn.style.display = 'none';
+        }
     });
 
-    document.querySelector('[data-category="all"]')?.classList.add('catalog__tabs-tab--active');
-
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
     function handleScroll() {
         if (window.innerWidth <= 768) {
             if (window.scrollY > 300) {
@@ -161,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", handleScroll); 
+    window.addEventListener("resize", handleScroll);
 
     scrollToTopBtn.addEventListener("click", function () {
         window.scrollTo({
