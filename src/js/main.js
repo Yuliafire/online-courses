@@ -146,4 +146,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.querySelector('[data-category="all"]')?.classList.add('catalog__tabs-tab--active');
+
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    function handleScroll() {
+        if (window.innerWidth <= 768) {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll); 
+
+    scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+
+    handleScroll();
 });
