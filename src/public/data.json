@@ -94,7 +94,7 @@
       "category": "HR & Recruiting",
       "title": "Employee Engagement and Retention",
       "price": 180,
-      "instructor": "Sarah Johnson",
+      "instructor": "James Liu",
       "image": "/images/image3.jpg"
     },
     {
@@ -102,7 +102,7 @@
       "category": "HR & Recruiting",
       "title": "Talent Acquisition Masterclass",
       "price": 280,
-      "instructor": "James Liu",
+      "instructor": "Sarah Johnson",
       "image": "/images/image4.jpg"
     },
     {
@@ -118,7 +118,7 @@
       "category": "marketing",
       "title": "Social Media Marketing Crash Course",
       "price": 90,
-      "instructor": "Tom Wilson",
+      "instructor": "Anna Lee",
       "image": "/images/image6.jpg"
     },
     {
@@ -126,7 +126,7 @@
       "category": "development",
       "title": "React & TypeScript Advanced Patterns",
       "price": 520,
-      "instructor": "Anna Lee",
+      "instructor": "Tom Wilson",
       "image": "/images/image7.jpg"
     },
     {

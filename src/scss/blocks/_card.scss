@@ -12,7 +12,6 @@
   box-shadow: $card-box-shadow;
   border-radius: $input-radius;
 
-
   &:hover {
     transform: translateY(-12px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -82,6 +81,8 @@
     display: flex;
     justify-content: flex-start;
     gap: 5px;
+    flex-wrap: wrap; 
+    margin-top: auto; 
   }
 
   &__price {
@@ -89,8 +90,16 @@
     color: $red-text;
     margin: 0px;
     font-style: normal;
-    font-size: 18px;
+    font-size: $font-size-lg;
     line-height: 150%;
+
+    @media (max-width: 1023px) {
+      font-size: $font-size-base;
+    }
+    
+    @media (max-width: 479px) {
+      font-size: $font-size-sm;
+    }
   }
 
   &__instructor {
@@ -99,5 +108,15 @@
     font-size: 18px;
     line-height: 150%;
     color: $text-secondary;
+    font-size: $font-size-lg;
+
+    @media (max-width: 1023px) {
+      font-size: $font-size-base;
+    }
+
+    @media (max-width: 479px) {
+      font-size: $font-size-sm;
+      line-height: 1.4;
+    }
   }
 }
