@@ -1,33 +1,79 @@
+$font-primary: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif;
+
+
+//  new variables. refactor 
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// Line heights
+$line-height-tight: 1.1;
+$line-height-normal: 1.3;
+$line-height-relaxed: 1.5;
+$line-height-loose: 1.7;
+
+// Font sizes (in rem)
+$font-size-xs: 0.75rem;    // 12px
+$font-size-sm: 0.875rem;   // 14px
+$font-size-base: 1rem;     // 16px
+$font-size-lg: 1.125rem;   // 18px
+$font-size-xl: 1.25rem;    // 20px
+$font-size-2xl: 1.5rem;    // 24px
+$font-size-3xl: 1.875rem;  // 30px
+$font-size-4xl: 2.25rem;   // 36px
+$font-size-5xl: 3rem;      // 48px
+$font-size-6xl: 3.75rem;   // 60px
+
+//  new variables. refactor 
+
+
+
+
+
+
+
+
 $border-active-tab: 1px solid #ff3f3a;
 
 // $yellow: #FFC93C;
-$text-primary: #1A1A1A;
-$text-secondary: #787A80;
+$text-primary: #1a1a1a;
+$text-secondary: #787a80;
 $red-text: #ff3f3a;
+
+$title-text: #1e212c;
 
 $primary-bg: #fff;
 
 $card-border: 1px solid #e5e8ed;
 $card-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
-0px 30px 24px -10px rgba(154, 156, 165, 0.05),
-0px 12px 10px -6px rgba(154, 156, 165, 0.04),
-0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+  0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+  0px 4px 4px -4px rgba(30, 33, 44, 0.03);
 
-$tag-marketing:  #03CEA4;
-$tag-management:#5A87FC;
-$tag-hr: #F89828;
-$tag-design: #F52F6E;
-$tag-development: #7772F1;
+$tag-marketing: #03cea4;
+$tag-management: #5a87fc;
+$tag-hr: #f89828;
+$tag-design: #f52f6e;
+$tag-development: #7772f1;
 
 $input-radius: 4px;
 $input-border: 1px solid #d7dadd;
-$text-input: #9A9CA5;
+$text-input: #9a9ca5;
 
 $radius: 16px;
 $shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 $transition: all 0.3s ease;
 
-//  new variables 
+
+
+
+
+
+
+//  new variables. refactor 
 
 $btn-typography: 15px;
 $header-catalog-typography: 13px;
@@ -49,10 +95,5 @@ $typography-card-header: 20px;
 $typography-card-subheader: 0.875rem;
 $typography-text: 16px;
 $typography-copyright-stepper: 14px;
-$font-family: 'Roboto', sans-serif;
-$line-height: 120%;
-$base-weight: 400;
-$subheader-weight: 500;
-$btn-weight: 500;
-$fast-catalog-weight: 300;
+
 $content-width: 1440px;

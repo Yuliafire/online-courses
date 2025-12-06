@@ -7,25 +7,34 @@
 @use "blocks/load-more" as *;
 @use "blocks/topBtn" as *;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-*, *::before, *::after {
-     box-sizing: border-box; 
-     margin: 0;
-     padding: 0;
-    }
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-body { 
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #fff; 
-    color: #1A1A1A; 
-    line-height: 1.5; 
-    min-height: 100vh;
+body {
+  margin: 0;
+  background: $primary-bg;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 320px;
 }
 
 .container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 clamp(16px, 5vw, 40px);
-   }
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 5vw, 40px);
+}
 
+.catalog {
+  width: 100%;
+}

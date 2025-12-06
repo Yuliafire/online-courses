@@ -3,16 +3,39 @@
 .catalog {
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 25px;
-    max-width: 1230px;
+    gap: 30px;
     width: 100%;
+    max-width: 1230px; 
     margin: 0 auto;
     box-sizing: border-box;
+    grid-template-columns: repeat(3, 1fr);
+    
+    @media (max-width: 1279px) {
+      gap: 25px;
+      padding: 0 40px;
+    }
+    
+    @media (max-width: 1023px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 0 30px;
+    }
 
-    @media (max-width: 1230px) {
-    padding-left: 20px;
-    padding-right: 20px;
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      padding: 0 20px;
+    }
+
+    @media (max-width: 479px) {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      padding: 0 16px;
+    }
+
+    @media (max-width: 374px) {
+      padding: 0 12px;
+      gap: 14px;
+    }
   }
-}
 }
