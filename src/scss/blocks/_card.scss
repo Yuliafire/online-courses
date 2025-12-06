@@ -7,8 +7,6 @@
   min-height: 438px;
   height: auto;
   background: $primary-bg;
-  border-radius: $radius;
-  box-shadow: $shadow;
   transition: $transition;
   border: $card-border;
   box-shadow: $card-box-shadow;
@@ -87,12 +85,10 @@
   }
 
   &__price {
-    font-size: 28px;
     font-weight: $font-weight-bold;
     color: $red-text;
     margin: 0px;
     font-style: normal;
-    font-weight: $font-weight-bold;
     font-size: 18px;
     line-height: 150%;
   }

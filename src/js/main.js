@@ -23,16 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSearch = '';
 
     const clearGrid = () => {
-        while (grid.firstChild) grid.removeChild(grid.firstChild);
+        while (grid.firstChild) {
+            grid.firstChild.remove();
+        }
     };
 
-    // Функция для преобразования категории в CSS-класс
     const categoryToSlug = (category) => {
         return category
             .toLowerCase()
-            .replace(/&/g, 'and')
-            .replace(/\s+/g, '-')
-            .replace(/[^a-z0-9-]/g, '');
+            .replaceAll('&', 'and') 
+            .replaceAll(/\s+/g, '-') 
+            .replaceAll(/[^a-z0-9-]/g, ''); 
     };
 
     const createCard = (course) => {

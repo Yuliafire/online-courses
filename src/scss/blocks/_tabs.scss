@@ -56,10 +56,9 @@
     border: 2px solid transparent;
     border-radius: 8px;
     cursor: pointer;
-    position: relative;
     transition: $transition;
     white-space: nowrap;
-    font-family: "Lato";
+    font-family: $font-primary;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;

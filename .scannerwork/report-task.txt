@@ -1,0 +1,7 @@
+organization=yuliafire
+projectKey=Yuliafire_online-courses
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.77094
+dashboardUrl=https://sonarcloud.io/dashboard?id=Yuliafire_online-courses
+ceTaskId=AZr0I1WEBfkZKeU0tYTK
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZr0I1WEBfkZKeU0tYTK

@@ -6,8 +6,6 @@
     display: flex;
     flex: 1; 
     align-items: center;
-    max-width: clamp(280px, 35vw, 420px);
-    min-width: 240px;
     max-width: 315px;
     height: 44px;
     box-sizing: border-box;
@@ -31,16 +29,12 @@
 
     &:focus {
       outline: none;
+      opacity: 0.6;
     }
     
     &::placeholder {
       color: $text-input;
       transition: opacity 0.2s;
-    }
-
-    &:focus {
-      outline: none;
-      opacity: 0.6;
     }
   }
 
