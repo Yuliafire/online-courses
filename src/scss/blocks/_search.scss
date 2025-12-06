@@ -4,7 +4,7 @@
   &__search {
     position: relative;
     display: flex;
-    flex: 1; 
+    flex: 1;
     align-items: center;
     max-width: 315px;
     height: 44px;
@@ -31,10 +31,13 @@
       outline: none;
       opacity: 0.6;
     }
-    
+
     &::placeholder {
       color: $text-input;
       transition: opacity 0.2s;
+      font-weight: $font-weight-regular;
+      font-size: $font-size-sm;
+      line-height: $line-height-relaxed;
     }
   }
 

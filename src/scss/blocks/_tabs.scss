@@ -11,7 +11,7 @@
     width: 100%;
     margin: 0 auto;
     margin-bottom: clamp(40px, 8vw, 64px);
-    padding-top: 40px;
+    padding-top: 38px;
 
     @media (max-width: 1230px) {
       padding-left: 20px;
@@ -32,7 +32,7 @@
     justify-content: center;
     margin: 0;
     padding: 0px;
-    gap: 20px;
+    gap: 15px;
   }
 
   &__tabs {
@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    gap: 8px;
+    gap: 3px;
 
     @media (max-width: 768px) {
       flex-direction: column;

@@ -11,6 +11,7 @@
   border: $card-border;
   box-shadow: $card-box-shadow;
   border-radius: $input-radius;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-12px);
@@ -30,8 +31,8 @@
     flex-direction: column;
     align-items: flex-start;
     background: $primary-bg;
-    padding: 1.5625rem; 
-    gap: 1.125rem;    
+    padding: 20px;
+    gap: 25px;
     font-family: $font-primary;
   }
 
@@ -57,7 +58,7 @@
     }
 
     &--hr-and-recruiting {
-      background: $tag-hr; 
+      background: $tag-hr;
     }
 
     &--design {
@@ -72,8 +73,7 @@
   &__title {
     font-size: clamp(16px, 2.5vw, 20px);
     font-weight: $font-weight-semibold;
-    margin: 0 0 8px;
-    line-height: $line-height-normal;
+    line-height: 1.5;
     color: $text-primary;
   }
 
@@ -81,8 +81,8 @@
     display: flex;
     justify-content: flex-start;
     gap: 5px;
-    flex-wrap: wrap; 
-    margin-top: auto; 
+    flex-wrap: wrap;
+    margin-top: -10px;
   }
 
   &__price {
@@ -96,7 +96,7 @@
     @media (max-width: 1023px) {
       font-size: $font-size-base;
     }
-    
+
     @media (max-width: 479px) {
       font-size: $font-size-sm;
     }
