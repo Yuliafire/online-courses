@@ -1,14 +1,15 @@
 # Online Courses Catalog – Test Task  
-**Pixel-perfect • Fully fluid adaptive • Vanilla JS + SCSS + BEM • Zero frameworks**
+**Vanilla JS + HTML + SCSS + BEM**
+
+## Stack 
+- HTML + vanilla JavaScript + SCSS  
+- Vite
 
 ## Features
-- Pure HTML + vanilla JavaScript + SCSS  
-- Strict BEM methodology 
-- Pixel-perfect match with the Figma design (1920 px → 320 px)  
-- implemented fully fluid responsive layout — no media queries, no fixed breakpoints  
+- implemented fully fluid responsive layout
 - implemented live search by course title (instant, no page reload)  
 - implemented category filtering with dynamic counters  
-- implemented “Load more” pagination that respects filters and search  
+- implemented “Load more” 
 - implemented button TOP on smaller screens
 
 ## Areas for IMPROVEMENT:
