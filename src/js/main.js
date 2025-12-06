@@ -22,6 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentCategory = 'all';
     let currentSearch = '';
 
+    const initActiveTab = () => {
+        const allTab = document.querySelector('[data-category="all"]');
+
+        if (!allTab) return;
+
+        tabs.forEach(tab => {
+            tab.classList.remove('catalog__tabs-tab--active');
+            allTab.classList.add('catalog__tabs-tab--active');
+        });
+    }
+
+
     const clearGrid = () => {
         while (grid.firstChild) {
             grid.firstChild.remove();
@@ -148,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(data => {
             allCourses = data.courses;
+            initActiveTab();
             applyFilters();
         })
         .catch(error => {
