@@ -24,8 +24,8 @@ $font-size-xl: 1.25rem;    // 20px
 $font-size-2xl: 1.5rem;    // 24px
 $font-size-3xl: 1.875rem;  // 30px
 $font-size-4xl: 2.25rem;   // 36px
-$font-size-5xl: 3rem;      // 48px
-$font-size-6xl: 3.75rem;   // 60px
+$font-size-5xl: 2.5rem;      // 48px
+$font-size-6xl: 2.875rem;   // 60px
 
 //  new variables. refactor 
 
@@ -36,16 +36,23 @@ $font-size-6xl: 3.75rem;   // 60px
 
 
 
-$border-active-tab: 1px solid #ff3f3a;
 
 // $yellow: #FFC93C;
+
+
+
+
+
+$primary-bg: #fff;
 $text-primary: #1a1a1a;
 $text-secondary: #787a80;
 $red-text: #ff3f3a;
-
 $title-text: #1e212c;
 
-$primary-bg: #fff;
+
+$border-active-tab: 1px solid #ff3f3a;
+
+
 
 $card-border: 1px solid #e5e8ed;
 $card-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
@@ -62,38 +69,8 @@ $tag-development: #7772f1;
 $input-radius: 4px;
 $input-border: 1px solid #d7dadd;
 $text-input: #9a9ca5;
+$input-focus:  #3b82f6;
 
 $radius: 16px;
 $shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 $transition: all 0.3s ease;
-
-
-
-
-
-
-
-//  new variables. refactor 
-
-$btn-typography: 15px;
-$header-catalog-typography: 13px;
-$page-header-typography: 15px;
-$header-mobile-typography: 15px;
-$header-typography: 15px;
-$typography-label: 12px;
-
-$typography-button: 15px;
-$typography-header-catalog: 13px;
-$typography-page-header: 60px;
-$typography-page-header-mobile: 36px;
-$typography-header: 48px;
-$typography-header-mobile: 32px;
-$typography-big-text: 24px;
-$typography-big-text-mobile: 18px;
-$typography-subheader: 34px;
-$typography-card-header: 20px;
-$typography-card-subheader: 0.875rem;
-$typography-text: 16px;
-$typography-copyright-stepper: 14px;
-
-$content-width: 1440px;

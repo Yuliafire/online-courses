@@ -14,6 +14,7 @@
   box-shadow: $card-box-shadow;
   border-radius: $input-radius;
 
+
   &:hover {
     transform: translateY(-12px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -34,6 +35,7 @@
     background: $primary-bg;
     padding: 25px;
     gap: 18px;
+    font-family: $font-primary;
   }
 
   &__tag {
@@ -41,11 +43,10 @@
     flex-direction: row;
     align-items: center;
     letter-spacing: 0.5px;
-    font-family: "Lato";
     font-style: normal;
-    font-weight: 400;
+    font-weight: $font-weight-regular;
     font-size: 14px;
-    line-height: 150%;
+    line-height: $line-height-relaxed;
     border-radius: $input-radius;
     padding: 1px 8px;
     color: $primary-bg;
@@ -73,9 +74,9 @@
 
   &__title {
     font-size: clamp(16px, 2.5vw, 20px);
-    font-weight: 600;
+    font-weight: $font-weight-semibold;
     margin: 0 0 8px;
-    line-height: 1.3;
+    line-height: $line-height-normal;
     color: $text-primary;
   }
 
@@ -87,20 +88,18 @@
 
   &__price {
     font-size: 28px;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     color: $red-text;
-    margin: 0px 0;
-    font-family: "Lato";
+    margin: 0px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     font-size: 18px;
     line-height: 150%;
   }
 
   &__instructor {
-    font-family: "Lato";
     font-style: normal;
-    font-weight: 400;
+    font-weight: $font-weight-regular;
     font-size: 18px;
     line-height: 150%;
     color: $text-secondary;
