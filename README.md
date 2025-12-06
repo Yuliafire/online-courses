@@ -16,7 +16,6 @@
 - find new images fo the rest 8 cards (we have 17 courses in total based on the current figma design)
 - add mixins 
 - store filtered results in local storage 
-- add bg-images
 
 ## Quick start (development)
 
