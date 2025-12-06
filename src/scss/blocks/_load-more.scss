@@ -6,8 +6,6 @@
     vertical-align: middle;
     margin: 0 auto;
     margin-top: 82px;
-    font-size: $font-size-lg;
-    font-weight: $font-weight-semibold;
     background: transparent;
     cursor: pointer;
     transition: $transition;
@@ -23,7 +21,6 @@
       padding: 12px 24px;
       font-size: $font-size-sm;
       width: 100%;
-      max-width: 280px;
     }
 
     svg {
@@ -46,6 +43,10 @@
       display: inline-block;
       vertical-align: middle;
       padding-left: 5px;
+      color: $load-more;
+      font-weight: $font-weight-bold;
+      font-size: $font-size-base;
+      line-height: $line-height-loose;
     }
   }
 }
