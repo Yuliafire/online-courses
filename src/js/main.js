@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tag = document.createElement('span');
         const slug = categoryToSlug(course.category);
         tag.className = `card__tag card__tag--${slug}`;
-        tag.textContent = course.category.replace(/\b\w/g, char => char.toUpperCase());
+        tag.textContent = course.category.replaceAll(/\b\w/g, char => char.toUpperCase());
 
         const title = document.createElement('h3');
         title.className = 'card__title';
