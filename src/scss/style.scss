@@ -33,8 +33,8 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 clamp(16px, 5vw, 40px);
-  background-image: url("/images/dots.png"), url("../public/images/shapes.png"),
-    url("../public/images/shapes-1.png");
+  background-image: url("/images/dots.png"), url("/images/shapes.png"),
+    url("/images/shapes-1.png");
   background-repeat: no-repeat;
   background-position: right 45px, 55px 39%, calc(100% - 75px) 64%;
   background-size: auto;
