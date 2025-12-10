@@ -1,0 +1,52 @@
+@use "../variables" as *;
+
+.catalog {
+  &__load-more {
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-top: 82px;
+    background: transparent;
+    cursor: pointer;
+    transition: $transition;
+    outline: none;
+    border: none;
+
+    @media (max-width: 767px) {
+      padding: 14px 32px;
+      font-size: $font-size-base;
+    }
+
+    @media (max-width: 479px) {
+      padding: 12px 24px;
+      font-size: $font-size-sm;
+      width: 100%;
+    }
+
+    svg {
+      width: 22px;
+      height: 20px;
+      vertical-align: middle;
+
+      @media (max-width: 767px) {
+        width: 20px;
+        height: 18px;
+      }
+
+      @media (max-width: 479px) {
+        width: 18px;
+        height: 16px;
+      }
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 5px;
+      color: $load-more;
+      font-weight: $font-weight-bold;
+      font-size: $font-size-base;
+      line-height: $line-height-loose;
+    }
+  }
+}

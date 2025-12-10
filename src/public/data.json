@@ -1,0 +1,141 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "category": "marketing",
+      "title": "The Ultimate Google Ads Training Course",
+      "price": 100,
+      "instructor": "Jerome Bell",
+      "image": "/images/image.jpg"
+    },
+    {
+      "id": 2,
+      "category": "management",
+      "title": "Product Management Fundamentals",
+      "price": 480,
+      "instructor": "Marvin McKinney",
+      "image": "/images/image2.jpg"
+    },
+    {
+      "id": 3,
+      "category": "HR & Recruiting",
+      "title": "HR Management and Analytics",
+      "price": 200,
+      "instructor": "Leslie Alexander Li",
+      "image": "/images/image3.jpg"
+    },
+    {
+      "id": 4,
+      "category": "marketing",
+      "title": "Brand Management & PR Communications",
+      "price": 530,
+      "instructor": "Kristin Watson",
+      "image": "/images/image4.jpg"
+    },
+    {
+      "id": 5,
+      "category": "design",
+      "title": "Graphic Design Basic",
+      "price": 500,
+      "instructor": "Guy Hawkins",
+      "image": "/images/image5.jpg"
+    },
+    {
+      "id": 6,
+      "category": "management",
+      "title": "Business Development Management",
+      "price": 400,
+      "instructor": "Dianne Russell",
+      "image": "/images/image6.jpg"
+    },
+    {
+      "id": 7,
+      "category": "development",
+      "title": "Highload Software Architecture",
+      "price": 600,
+      "instructor": "Brooklyn Simmons",
+      "image": "/images/image7.jpg"
+    },
+    {
+      "id": 8,
+      "category": "HR & Recruiting",
+      "title": "Human Resources – Selection and Recruitment",
+      "price": 150,
+      "instructor": "Kathryn Murphy",
+      "image": "/images/image8.jpg"
+    },
+    {
+      "id": 9,
+      "category": "design",
+      "title": "User Experience. Human-centered Design",
+      "price": 240,
+      "instructor": "Cody Fisher",
+      "image": "/images/image9.jpg"
+    },
+
+    {
+      "id": 10,
+      "category": "marketing",
+      "title": "Advanced SEO Strategies for E-commerce",
+      "price": 120,
+      "instructor": "Jane Doe",
+      "image": "/images/image.jpg"
+    },
+    {
+      "id": 11,
+      "category": "management",
+      "title": "Agile Project Management Masterclass",
+      "price": 350,
+      "instructor": "John Smith",
+      "image": "/images/image2.jpg"
+    },
+    {
+      "id": 12,
+      "category": "HR & Recruiting",
+      "title": "Employee Engagement and Retention",
+      "price": 180,
+      "instructor": "James Liu",
+      "image": "/images/image3.jpg"
+    },
+    {
+      "id": 13,
+      "category": "HR & Recruiting",
+      "title": "Talent Acquisition Masterclass",
+      "price": 280,
+      "instructor": "Sarah Johnson",
+      "image": "/images/image4.jpg"
+    },
+    {
+      "id": 14,
+      "category": "HR & Recruiting",
+      "title": "Diversity & Inclusion in the Workplace",
+      "price": 190,
+      "instructor": "Robert Chen",
+      "image": "/images/image5.jpg"
+    },
+    {
+      "id": 15,
+      "category": "marketing",
+      "title": "Social Media Marketing Crash Course",
+      "price": 90,
+      "instructor": "Anna Lee",
+      "image": "/images/image6.jpg"
+    },
+    {
+      "id": 16,
+      "category": "development",
+      "title": "React & TypeScript Advanced Patterns",
+      "price": 520,
+      "instructor": "Tom Wilson",
+      "image": "/images/image7.jpg"
+    },
+    {
+      "id": 17,
+      "category": "development",
+      "title": "Microservices Architecture Deep Dive",
+      "price": 720,
+      "instructor": "Sofia Rodriguez",
+      "image": "/images/image8.jpg"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Courses Catalog</title>
+    <meta
+      name="keywords"
+      content="online courses, e-learning, marketing courses, development courses, design courses, HR courses, management training"
+    />
+    <meta
+      name="description"
+      content="Browse 1000+ online courses in marketing, management, HR, design, and development. Start learning today with industry experts."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script type="module" src="/js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <header class="header">
+          <div class="header__container">
+            <p class="header__label">ENJOY YOUR STUDYING!</p>
+            <h1 class="header__title">Our online courses</h1>
+          </div>
+        </header>
+
+        <section class="catalog">
+          <div class="catalog__container">
+            <div class="catalog__topbar">
+              <div class="catalog__categories">
+                <div class="catalog__tabs">
+                  <button
+                    class="catalog__tabs-tab gifts__tabs-tab--active"
+                    data-category="all"
+                  >
+                    All <sup class="catalog__tabs-count">17</sup>
+                  </button>
+                  <button class="catalog__tabs-tab" data-category="marketing">
+                    Marketing <sup class="catalog__tabs-count">4</sup>
+                  </button>
+                  <button class="catalog__tabs-tab" data-category="management">
+                    Management <sup class="catalog__tabs-count">4</sup>
+                  </button>
+                  <button
+                    class="catalog__tabs-tab"
+                    data-category="hr-recruiting"
+                  >
+                    HR &amp; Recruiting<sup class="catalog__tabs-count">3</sup>
+                  </button>
+                  <button class="catalog__tabs-tab" data-category="design">
+                    Design <sup class="catalog__tabs-count">3</sup>
+                  </button>
+                  <button class="catalog__tabs-tab" data-category="development">
+                    Development <sup class="catalog__tabs-count">3</sup>
+                  </button>
+                </div>
+              </div>
+
+              <div class="catalog__search">
+                <input
+                  type="search"
+                  class="catalog__search-input"
+                  id="searchInput"
+                  placeholder="Search course..."
+                  autocomplete="off"
+                />
+                <svg
+                  class="catalog__search-icon"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.41667 1.33333C3.60922 1.33333 1.33333 3.60922 1.33333 6.41667C1.33333 9.22411 3.60922 11.5 6.41667 11.5C7.81926 11.5 9.08811 10.9328 10.0085 10.0137C10.9307 9.09288 11.5 7.82189 11.5 6.41667C11.5 3.60922 9.22411 1.33333 6.41667 1.33333ZM0 6.41667C0 2.87284 2.87284 0 6.41667 0C9.96049 0 12.8333 2.87284 12.8333 6.41667C12.8333 7.94947 12.2952 9.35754 11.3986 10.4609L14.1376 13.1948C14.3982 13.4549 14.3986 13.877 14.1385 14.1376C13.8784 14.3982 13.4563 14.3986 13.1957 14.1385L10.4553 11.4032C9.35281 12.297 7.94689 12.8333 6.41667 12.8333C2.87284 12.8333 0 9.96049 0 6.41667Z"
+                    fill="#9A9CA5"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="catalog__grid" id="grid"></div>
+
+            <button class="catalog__load-more" id="loadMore">
+              <svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1 0C1.55228 0 2 0.447715 2 1V5.43632C3.65803 2.20928 7.01998 0 10.9 0C15.2556 0 18.9584 2.78413 20.3307 6.66675C20.5147 7.18747 20.2418 7.75879 19.7211 7.94284C19.2004 8.12689 18.6291 7.85396 18.445 7.33325C17.3463 4.22472 14.3817 2 10.9 2C7.93996 2 5.35365 3.60799 3.96994 6H6.99996C7.55225 6 7.99996 6.44772 7.99996 7C7.99996 7.55228 7.55225 8 6.99996 8H1C0.447715 8 0 7.55228 0 7V1C0 0.447715 0.447715 0 1 0Z"
+                  fill="#424551"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.07703 12.0572C2.59775 11.8731 3.16907 12.146 3.35312 12.6668C4.45183 15.7753 7.41647 18 10.8982 18C13.8582 18 16.4445 16.392 17.8282 14H14.7982C14.2459 14 13.7982 13.5523 13.7982 13C13.7982 12.4477 14.2459 12 14.7982 12H20.7981C21.3504 12 21.7981 12.4477 21.7981 13V19C21.7981 19.5523 21.3504 20 20.7981 20C20.2459 20 19.7981 19.5523 19.7981 19V14.5637C18.1401 17.7907 14.7782 20 10.8982 20C6.54254 20 2.83975 17.2159 1.46744 13.3332C1.28339 12.8125 1.55632 12.2412 2.07703 12.0572Z"
+                  fill="#424551"
+                />
+              </svg>
+              <span>Load more</span>
+            </button>
+
+            <button id="scrollToTopBtn" class="catalog__scroll-top">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 5V19"
+                  stroke="#FF4646"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18 11L12 5"
+                  stroke="#FF4646"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6 11L12 5"
+                  stroke="#FF4646"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

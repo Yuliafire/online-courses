@@ -1,0 +1,57 @@
+@use "variables" as *;
+@use "blocks/header" as *;
+@use "blocks/tabs" as *;
+@use "blocks/search" as *;
+@use "blocks/grid" as *;
+@use "blocks/card" as *;
+@use "blocks/load-more" as *;
+@use "blocks/topBtn" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: $primary-bg;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 320px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 5vw, 40px);
+  background-image: url("/images/dots.png"), url("/images/shapes.png"),
+    url("/images/shapes-1.png");
+  background-repeat: no-repeat;
+  background-position: right 45px, 55px 39%, calc(100% - 75px) 64%;
+  background-size: auto;
+
+  @media (max-width: 768px) {
+    background-image: url("/images/dots.png");
+    background-position: right 25px; 
+    background-size: 80px auto;
+  }
+  
+  @media (max-width: 480px) {
+    background-image: url("/images/dots.png");
+    background-position: right 15px;
+    background-size: 60px auto;
+  }
+}
+
+.catalog {
+  width: 100%;
+}
